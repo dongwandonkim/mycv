@@ -3,9 +3,12 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "test5@test.com",
+  "email": "test7@test.com",
   "password": "password"
 }
+
+### who am i
+GET http://localhost:3000/auth/whoami
 
 ### sign in
 POST http://localhost:3000/auth/signin
@@ -16,20 +19,23 @@ content-type: application/json
   "password": "password"
 }
 
+### sign out
+POST http://localhost:3000/auth/signout
+
 ### find a user
 GET http://localhost:3000/auth/5
 content-type: application/json
 
 ### find all users
-GET http://localhost:3000/auth?email=test@test.com
+GET http://localhost:3000/auth?email=test1@test.com
 content-type: application/json
 
 ### delete a user
-DELETE http://localhost:3000/auth/4
+DELETE http://localhost:3000/auth/5
 Content-Type: application/json
 
 ### update a user
-PATCH http://localhost:3000/auth/5
+PATCH http://localhost:3000/auth/6
 Content-Type: application/json
 
 {
