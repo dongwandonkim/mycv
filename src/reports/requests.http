@@ -11,3 +11,21 @@ content-type: application/json
   "lat": 0,
   "price": 30000
 }
+# {
+#   "make": "Mercedes Benz",
+#   "model": "E400",
+#   "year": 2016,
+#   "mileage": 89432,
+#   "lng": 0,
+#   "lat": 0,
+#   "price": 40000
+# }
+
+
+### Approval
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+  "approved": true
+}
