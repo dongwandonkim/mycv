@@ -14,21 +14,21 @@ content-type: application/json
 {
   "make": "Mercedes Benz",
   "model": "G63",
-  "year": 2016,
-  "mileage": 27432,
-  "lng": 0,
-  "lat": 0,
-  "price": 240000
+  "year": 2014,
+  "mileage": 47432,
+  "lng": 10,
+  "lat": 15,
+  "price": 180000
 }
 
 
 ### Approval
-PATCH http://localhost:3000/reports/1
+PATCH http://localhost:3000/reports/12
 Content-Type: application/json
 
 {
-  "approved": false
+  "approved": true
 }
 
 ### GET estimate
-GET http://localhost:3000/reports?make=bmw&model=x5&lng=0&lat=0&mileage=48000&year=2016
+GET http://localhost:3000/reports?make=Mercedes%20Benz&model=G63&lng=5&lat=10&mileage=48000&year=2016
